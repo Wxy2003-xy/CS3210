@@ -88,14 +88,29 @@ A segment of a process that modifies shared resources e.g. global flags, shared 
 Problem with this implementation is that the locking and unlocking operations are not atomic.\\
 \par\vspace{3ex}
 \begin{minipage}{0.45\linewidth}
-\begin{Verbatim}[frame=topline,numbers=left,label= Process 1,framesep=3mm]
-    # initialization...
-    bn
+\begin{Verbatim}[frame=topline,numbers=left,label= Process 0,framesep=3mm]
+# initialization...
+loop: 
+    la $t0, LOCK_ADDR
+    lw $t1, $t0, 0 
+    bne $t1, $0, loop
+    sw $t0, 1
+# Critical Section 
+    la $t0, LOCK_ADDR
+    sw $t0, 1
 \end{Verbatim}
 \end{minipage}\hfill
 \begin{minipage}{0.45\linewidth}
 \begin{Verbatim}[frame=topline,numbers=left,label= Process 1,framesep=3mm]
 
+loop: 
+    la $t0, LOCK_ADDR
+    lw $t1, $t0, 0 
+    bne $t1, $0, loop
+    sw $t0, 1
+# Critical Section 
+    la $t0, LOCK_ADDR
+    sw $t0, 1
 \end{Verbatim}
 \end{minipage}\hfill
 \subsubsection*{Peterson's Solution}
