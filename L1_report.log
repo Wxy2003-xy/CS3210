@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.22)  25 AUG 2025 23:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.22)  27 AUG 2025 23:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -523,7 +523,7 @@ Package pdftex.def Info: flg.jpeg  used on input line 80.
 File: comp.jpeg Graphic file (type jpg)
 <use comp.jpeg>
 Package pdftex.def Info: comp.jpeg  used on input line 145.
-(pdftex.def)             Requested size: 269.84639pt x 245.9285pt.
+(pdftex.def)             Requested size: 242.86009pt x 221.32777pt.
  [2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./comp.jpeg>] (./L1_report.aux)
 Package rerunfilecheck Info: File `L1_report.out' has not changed.
 (rerunfilecheck)             Checksum: 366B509BF4F698FA7B62B797726A5577;682.
@@ -537,7 +537,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,7n,76p,407b,1975s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on L1_report.pdf (2 pages, 578047 bytes).
+Output written on L1_report.pdf (2 pages, 576739 bytes).
 PDF statistics:
  133 PDF objects out of 1000 (max. 8388607)
  99 compressed objects within 1 object stream
