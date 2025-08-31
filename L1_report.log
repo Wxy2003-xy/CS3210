@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.22)  27 AUG 2025 23:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.22)  31 AUG 2025 15:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -406,15 +406,15 @@ LaTeX Font Info:    ... okay on input line 40.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(28.90755pt, 539.69278pt, 28.90755pt)
-* v-part:(T,H,B)=(28.90755pt, 787.23175pt, 28.90755pt)
+* h-part:(L,W,R)=(36.135pt, 525.23788pt, 36.135pt)
+* v-part:(T,H,B)=(36.135pt, 772.77686pt, 36.135pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=539.69278pt
-* \textheight=787.23175pt
-* \oddsidemargin=-43.36244pt
-* \evensidemargin=-43.36244pt
-* \topmargin=-80.36244pt
+* \textwidth=525.23788pt
+* \textheight=772.77686pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-73.135pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -505,25 +505,30 @@ LaTeX Font Info:    Font shape `T1/zlmtt/m/n' will be
 File: 000030.png Graphic file (type png)
 <use 000030.png>
 Package pdftex.def Info: 000030.png  used on input line 64.
-(pdftex.def)             Requested size: 264.45242pt x 163.35162pt.
+(pdftex.def)             Requested size: 257.36945pt x 158.97867pt.
 <000058.png, id=30, 669.50125pt x 413.545pt>
 File: 000058.png Graphic file (type png)
 <use 000058.png>
 Package pdftex.def Info: 000058.png  used on input line 66.
-(pdftex.def)             Requested size: 264.45242pt x 163.35162pt.
+(pdftex.def)             Requested size: 257.36945pt x 158.97867pt.
 <flg.jpeg, id=31, 2229.32875pt x 754.82pt>
 File: flg.jpeg Graphic file (type jpg)
 <use flg.jpeg>
 Package pdftex.def Info: flg.jpeg  used on input line 80.
-(pdftex.def)             Requested size: 539.69278pt x 182.7269pt.
- [1
+(pdftex.def)             Requested size: 525.23788pt x 177.83191pt.
+
+Overfull \hbox (8.3438pt too wide) in paragraph at lines 73--84
+\T1/lmr/m/n/10 Since we do not fo-cus on im-prove the al-go-rithm, we foucs on the over-head named \T1/zlmtt/m/n/10 std::vector<int, std::allocator<int>
+ []
+
+[1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc} <./000030.png> <./000058.png> <./flg.jpeg>]
 <comp.jpeg, id=57, 1416.29124pt x 1290.8225pt>
 File: comp.jpeg Graphic file (type jpg)
 <use comp.jpeg>
 Package pdftex.def Info: comp.jpeg  used on input line 145.
-(pdftex.def)             Requested size: 242.86009pt x 221.32777pt.
+(pdftex.def)             Requested size: 236.35544pt x 215.39917pt.
  [2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./comp.jpeg>] (./L1_report.aux)
 Package rerunfilecheck Info: File `L1_report.out' has not changed.
 (rerunfilecheck)             Checksum: 366B509BF4F698FA7B62B797726A5577;682.
@@ -531,16 +536,16 @@ Package rerunfilecheck Info: File `L1_report.out' has not changed.
 Here is how much of TeX's memory you used:
  13538 strings out of 476025
  206049 string characters out of 5790016
- 1887388 words of memory out of 5000000
+ 1886388 words of memory out of 5000000
  33737 multiletter control sequences out of 15000+600000
  561956 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,7n,76p,407b,1975s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on L1_report.pdf (2 pages, 576739 bytes).
+Output written on L1_report.pdf (2 pages, 580217 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
+ 134 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
  26 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
