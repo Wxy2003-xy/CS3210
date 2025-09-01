@@ -16,7 +16,7 @@
 \usepackage{listings}  % for code listings
 \usepackage{tikz-cd}
 \usepackage{forest}
-
+\usepackage{booktabs}
 \usetikzlibrary{arrows.meta}
 \usetikzlibrary{arrows.meta,decorations.pathreplacing,calc}
 \lstset{frame=tb,
@@ -35,7 +35,7 @@
   breakatwhitespace=true,
   tabsize=3
 }
-\geometry{top=1in, bottom=1in, left=1in, right=1in}
+\geometry{top=0.2in, bottom=0.2in, left=0.2in, right=0.2in}
 
 \begin{document}
 \title{CS3210}
@@ -44,6 +44,7 @@
 }
 \maketitle
 \section{Computer architecture}
+\subsection{Parallelism}
 \begin{itemize}
     \item Concurrency:
     \begin{itemize}
@@ -70,7 +71,145 @@
             \item pipelining: [time parallelism] number of pipeline stages = maximum achievable speedup
             \item superscaling: [space parallelism] Duplicate the pipeline, multiple instruction can be on the same excution stage. Scheduling is challenging. Stronger structural hazard, less cycles per instruction
         \end{itemize}
+        \item Thread level parallelism:
+        \begin{itemize}
+            \item Simultaneous multithreading(SMT): processor provides hardware support for multiple thread level context
+            \item hyper-threading: executing multiple threads per processor at the same time
+        \end{itemize}
     \end{itemize}
+    \item Multi-Processor:
+    \begin{itemize}
+        \item Shared memory:
+        \item Distributed memory
+    \end{itemize}
+    \item Multicore processor archiecture
+    \begin{itemize}
+        \item hierarchical design:
+        \begin{itemize}
+            \item multiple cores share multiple caches
+            \item cache size increases from leaves to root, as more cores share the same cache
+            \item external memory shared by all cores
+        \end{itemize}
+        \item pipelined design
+        \begin{itemize}
+            \item data elements are processed by multiple execution cores in a piplined way
+            \item useful for sequential data element processing
+        \end{itemize}
+        \item network-based design
+        \begin{itemize}
+            \item cores and local caches and memory are connected via interconnection network
+            \begin{itemize}
+                \item Efficient on-chip interconnection: enough bandwidth, scalable
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+    Multiprocessing vs. multithreading:
+    \begin{itemize}
+        \item Multiprocessing: high overhead, i.e. context switches; able to utilize multiple processing units
+        \item Multthreading: low overhead; but effectively utilising the same processing unit
+    \end{itemize}
+\end{itemize}
+
+
+
+% -------- Table 1: Processor vs Core vs Processing Unit vs Logical Core --------
+\begin{table}[h]
+    \centering
+    \caption{Distinguishing “processor”, “core”, “processing unit”, and “logical core”}
+    \small
+    \begin{tabular}{@{}p{2.9cm}p{3.2cm}p{3.8cm}p{3.2cm}p{4.2cm}@{}}
+    \toprule
+    \textbf{Term} & \textbf{What it is} & \textbf{Independence / Context} & \textbf{Shares With} & \textbf{OS Sees / Notes} \\
+    \midrule
+    Processor (CPU / package) &
+    Physical chip/package containing compute resources (cores, caches, I/O, memory controller). &
+    Multiple cores; each core is an independent execution engine. &
+    All cores share off-core resources (e.g., memory controller, sometimes LLC). &
+    OS sees one processor package with $N$ cores; socket count in NUMA systems. \\
+    \addlinespace
+    Core (physical core) &
+    An independent execution pipeline (fetch/decode/execute). &
+    Can run its own instruction stream; has private L1/L2 (often). &
+    Shares last-level cache (LLC) and memory controller with other cores on the processor. &
+    OS schedules threads to cores; true parallelism across cores. \\
+    \addlinespace
+    Processing unit (execution context) &
+    Generic term for a hardware context that can run instructions (a core \emph{or} a hardware thread). &
+    Independent program counter, registers, and a stack. &
+    If it is a hardware thread, shares core pipelines with sibling threads. &
+    Ambiguous in literature; often equals “schedulable hardware context”. \\
+    \addlinespace
+    Logical core (hardware thread, SMT/HT) &
+    A virtualized execution context exposed by SMT/Hyper-Threading. &
+    Own PC/regs/stack, but \emph{shares} core’s execution units and caches. &
+    Siblings on the same physical core compete for pipelines, cache ports, bandwidth. &
+    OS treats each logical core as a CPU; throughput gain depends on resource contention and ILP. \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+% -------- Table 2: Flynn’s Taxonomy --------
+\begin{table}[h]
+    \centering
+    \caption{Flynn’s taxonomy: instruction/data streams, examples, and caveats}
+    \small
+    \begin{tabular}{@{}p{1.6cm}p{2.2cm}p{2.2cm}p{5.2cm}p{5.2cm}@{}}
+    \toprule
+    \textbf{Class} & \textbf{Instr. Streams} & \textbf{Data Streams} & \textbf{Typical Examples} & \textbf{Notes / Caveats} \\
+    \midrule
+    SISD &
+    1 & 1 &
+    Classic single-core CPUs; pipelined or superscalar scalar execution. &
+    Pipelining/superscalar improve throughput but pipelining does not add new data streams, superscalar does not add new instruction streams. \\
+    \addlinespace
+    SIMD &
+    1 & Many &
+    Vector/SIMD ISAs (SSE/AVX/NEON), GPU warp/warp-lane execution, vector processors. &
+    Same instruction applied to multiple data elements in lock-step; divergence harms efficiency (masks). \\
+    \addlinespace
+    MISD &
+    Many & 1 &
+    Rare/mostly theoretical; certain fault-tolerant or systolic designs sometimes cited. &
+    Not common in general-purpose computing; examples are niche/controversial. \\
+    \addlinespace
+    MIMD &
+    Many & Many &
+    Multicore/multiprocessor systems, clusters; CPUs with SMT (each HW thread its own stream). &
+    Threads/processes can execute different code on different data; includes shared-memory and distributed models. \\
+    \addlinespace
+    \multicolumn{5}{@{}p{16.8cm}@{}}{\emph{Hybrids:} 
+    Modern systems often combine MIMD (many cores/threads) with SIMD (per-core vectors). A single program may be MIMD\,+\,SIMD (e.g., OpenMP across cores + AVX within each core; GPUs: MIMD across warps/SMs, SIMD within a warp).} \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+    
+
+\subsection{Memory Organization}
+Parallel computers:
+\begin{itemize}
+    \item Distibuted-memory: Multiple computers
+    \begin{itemize}
+        \item each node is an indenpendent unit, with processor, memory etc. 
+        \item physically distributed memory modules, memory local and private to each node
+    \end{itemize}
+    \item Shared-memory: multiprocessor: programs and threads access memory through shared memory provider, unaware of the acual hardware memory architecture, requires cache coherence and memory consistency.
+    \begin{itemize}
+        \item cache coherence: local update by one processing unit, other PU should see the change being reflected in their copy of the same data in their cache
+        \item memory consistency
+    \end{itemize}
+    Shared memory model:
+    \begin{itemize}
+        \item uniform memory access(UMA): same latency of accessing the main memory for all processors. Contention makes this unsuitable for large number of processors. 
+        \item Non-uniform memory access(NUMA)
+        \item Cache-coherent Non-uniform memory access(ccNUMA)
+        \item Cache-only memory access(COMA)
+    \end{itemize}
+    \item Hybrid(distributed shared memory)
+\end{itemize}
+\begin{itemize}
+    \item Latency: time taken for a request from the processor to be serviced by the memory
+    \item Bandwidth: the rate at which the memory system can provide data to the processor
+    \item stall: When the processor cannot run the next instruction in an instruction stream due to dependency on a previous instrucion 
 \end{itemize}
 
 
