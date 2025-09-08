@@ -212,6 +212,72 @@ Parallel computers:
     \item stall: When the processor cannot run the next instruction in an instruction stream due to dependency on a previous instrucion 
 \end{itemize}
 
+\section{Performance}
+Goal: reduce response time: wall clock time
+
+\subsection{sequential}
+
+\begin{itemize}
+    \item User CPU time: for user prog
+    \item System CPU time: OS routines: depends on the OS implementatuon 
+    \item waiting time: I/O and other porgrames (due to time sharing, other programs get hihger piroirty etc): depends on the load o the coputer system (for seq program this shouldnt be high)
+\end{itemize}
+\[Time_{user}(A) =\left( N_{cycle}(A) + N_{mm\_cycle}(A)\right)\times Time_{cycle}\]
+User CPU time of prog A = number of CPU cycles needed fo rall instr times cycle time of CPU $\frac{1}{\text{clock rate}}$\\
+instructions have different exe time: 
+\[N_{cycle}(A) = \sum_{i=1}^{n}n_i(A)\times CPI\]
+\[ N_{mm\_cycle}(A) = N_{read}(A) + N_{write}(A) = \]\[N_{read\_cycle}(A) \times R_{read_miss}(A) \times N_{read\_miss\_cycle}(A + 
+N_{write\_cycle}(A) \times R_{write_miss}(A) \times N_{write\_miss\_cycle}(A))\]
+\[Time_{user}(A) = N_{instr}(A) \times CPI(A) \times Time_{cycle}\]
+CPI depends on the internal organization of the CPU, memory system and compiler; $N_{instr}$ depends on the compiler and ISA\\
+\subsubsection*{Memory access}
+
+\[MFLOPS = \frac{N_{fi\_ops}(A)}{Time_{user}(A)\time 10^6}\]
+
+\subsection{parallel}
+\[T_{processor}(n)\]
+\begin{itemize}
+    \item time for local computatio s
+    \item time for exchanged of data between PUs
+    \item time for synchronizaiton between PUs
+    \item waititng time: unbalanced load; memory contention; synchronization eg waiting to access shared data structure
+\end{itemize}
+
+Speed up
+\[S_p(n) = \frac{T_{best\_seq}(n)}{T_p(n)}\]
+Theoratically $S_p(n) \leq p$, but in practice, superlinear speedup is possile, eg: problem working task fits in the cache, and one threads pulls data into L3 and other threads can use\\
+Cost
+\[C_p(n) = p \times T_p{n}\]
+A parallel program is cost-optimal if it exe the same numbr of insructions as the best sequntial program\\
+Effiiency
+\[E_p(n) = \frac{T_{best\_seq}(n)}{C_p(n)} = \frac{S_p(n)}{p} = \frac{T_{best\_seq}(n)}{p\times T_p(n)}\]
+Ideally, $S_p(n) = p \rightarrow E_p(n) = 1$
 
 
+\subsection{Scalability}
+\subsubsection*{Amdahl's law: }
+speed up is limited by the fraction of the algo that cannot be parallelized\\
+\[T = fT_*(n) + (1-f)T_*(n)\]
+\[S_p = \frac{T_*(n)}{fT_*(n) + \frac{(1-f)}{p}\times T_*(n)} = \frac{1}{f + \frac{1-f}{p}} \leq \frac{1}{f}\]
+implication: need better compilers to reduce f\\
+drawback: f is not constant wrt n\\
+\subsubsection*{Gustafson's law:}
+\[\lim_{n\rightarrow \infty} f(n) = 0 \rightarrow \lim_{n\rightarrow \infty} S_p(n) = p\]
+\begin{itemize}
+    \item 
+    \item 
+\end{itemize}
+
+The interaction between size of th eproble  and the size of the parallel machine, dependedt on application, 
+
+
+
+
+
+
+
+\subsubsection*{Contentiion}
+many requests to a resource are made witin a small window of time, resource hotspot. Use tree structure communcation to reduce contention, at the cost of high latency 
+\subsubsection*{Locality}
+Exploit sharing: co locate tasks that operate on the same data, 
 \end{document}
