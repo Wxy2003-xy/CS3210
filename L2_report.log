@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.22)  9 SEP 2025 00:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.22)  11 SEP 2025 16:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -406,15 +406,15 @@ LaTeX Font Info:    ... okay on input line 40.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(36.135pt, 525.23788pt, 36.135pt)
-* v-part:(T,H,B)=(36.135pt, 772.77686pt, 36.135pt)
+* h-part:(L,W,R)=(50.58878pt, 496.33032pt, 50.58878pt)
+* v-part:(T,H,B)=(50.58878pt, 743.8693pt, 50.58878pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=525.23788pt
-* \textheight=772.77686pt
-* \oddsidemargin=-36.135pt
-* \evensidemargin=-36.135pt
-* \topmargin=-73.135pt
+* \textwidth=496.33032pt
+* \textheight=743.8693pt
+* \oddsidemargin=-21.68121pt
+* \evensidemargin=-21.68121pt
+* \topmargin=-58.68121pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -490,43 +490,57 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <ipc.png, id=4, 702.625pt x 433.62pt>
 File: ipc.png Graphic file (type png)
 <use ipc.png>
-Package pdftex.def Info: ipc.png  used on input line 55.
-(pdftex.def)             Requested size: 262.61894pt x 162.07777pt.
+Package pdftex.def Info: ipc.png  used on input line 60.
+(pdftex.def)             Requested size: 248.16516pt x 153.15211pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 56.
+(Font)              <10> on input line 61.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 56.
+(Font)              <7> on input line 61.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 56.
+(Font)              <5> on input line 61.
 <time.png, id=7, 702.625pt x 433.62pt>
 File: time.png Graphic file (type png)
 <use time.png>
-Package pdftex.def Info: time.png  used on input line 68.
-(pdftex.def)             Requested size: 262.61894pt x 162.07777pt.
+Package pdftex.def Info: time.png  used on input line 75.
+(pdftex.def)             Requested size: 248.16516pt x 153.15211pt.
 <mflops.png, id=9, 702.625pt x 433.62pt>
 File: mflops.png Graphic file (type png)
 <use mflops.png>
-Package pdftex.def Info: mflops.png  used on input line 82.
-(pdftex.def)             Requested size: 262.61894pt x 162.07777pt.
+Package pdftex.def Info: mflops.png  used on input line 89.
+(pdftex.def)             Requested size: 248.16516pt x 153.15211pt.
+
+Underfull \hbox (badness 1097) in paragraph at lines 92--97
+[]\T1/lmr/m/n/10 For both pro-ces-sors we can ob-serve that
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+zlmtt on input line 105.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/zlmtt/t1zlmtt.fd
+File: t1zlmtt.fd 2014/02/07 v1.0 Alternate font definitions for Latin Modern Typewriter, Michael Sharpe
+)
+LaTeX Font Info:    Font shape `T1/zlmtt/m/n' will be
+(Font)              scaled to size 10.0pt on input line 105.
  [1
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <./ipc.png> <./time.png> <./mflops.png>] (./L2_report.aux)
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./ipc.png> <./time.png> <./mflops.png>]
+LaTeX Font Info:    Font shape `T1/zlmtt/m/n' will be
+(Font)              scaled to size 9.0pt on input line 137.
+ [2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] (./L2_report.aux)
 Package rerunfilecheck Info: File `L2_report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13051 strings out of 476025
- 201439 string characters out of 5790016
- 1856388 words of memory out of 5000000
- 33283 multiletter control sequences out of 15000+600000
- 555340 words of font info for 70 fonts, out of 8000000 for 9000
+ 13468 strings out of 476025
+ 205385 string characters out of 5790016
+ 1876388 words of memory out of 5000000
+ 33678 multiletter control sequences out of 15000+600000
+ 565590 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,76p,407b,435s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr17.pfb>
-Output written on L2_report.pdf (1 page, 201835 bytes).
+ 75i,11n,76p,407b,1162s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
+Output written on L2_report.pdf (2 pages, 341607 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
+ 118 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
+ 15 named destinations out of 1000 (max. 500000)
  34 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,330 @@
+
+ Performance counter stats for './mm-omp 1024 1' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        4565551441      cycles                                                                  ( +-  0.75% )
+        8785544594      instructions                     #    1.92  insn per cycle              ( +-  0.00% )
+
+           1.10106 +- 0.00849 seconds time elapsed  ( +-  0.77% )
+
+
+ Performance counter stats for './mm-omp 1024 2' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        4603862919      cycles                                                                  ( +-  0.35% )
+        8787622622      instructions                     #    1.91  insn per cycle              ( +-  0.00% )
+
+           0.57915 +- 0.00404 seconds time elapsed  ( +-  0.70% )
+
+
+ Performance counter stats for './mm-omp 1024 3' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        4716606515      cycles                                                                  ( +-  1.94% )
+        8791978161      instructions                     #    1.86  insn per cycle              ( +-  0.02% )
+
+           0.41056 +- 0.00841 seconds time elapsed  ( +-  2.05% )
+
+
+ Performance counter stats for './mm-omp 1024 4' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        4701182831      cycles                                                                  ( +-  0.24% )
+        8792260088      instructions                     #    1.87  insn per cycle              ( +-  0.00% )
+
+           0.31527 +- 0.00164 seconds time elapsed  ( +-  0.52% )
+
+
+ Performance counter stats for './mm-omp 1024 5' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        6599346986      cycles                                                                  ( +-  0.20% )
+        8804502613      instructions                     #    1.33  insn per cycle              ( +-  0.01% )
+
+           0.47530 +- 0.00179 seconds time elapsed  ( +-  0.38% )
+
+
+ Performance counter stats for './mm-omp 1024 6' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        8219176324      cycles                                                                  ( +-  1.06% )
+        8809469347      instructions                     #    1.07  insn per cycle              ( +-  0.01% )
+
+            0.4348 +- 0.0106 seconds time elapsed  ( +-  2.45% )
+
+
+ Performance counter stats for './mm-omp 1024 7' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       11522991128      cycles                                                                  ( +-  0.89% )
+        8819154095      instructions                     #    0.77  insn per cycle              ( +-  0.01% )
+
+           0.52795 +- 0.00926 seconds time elapsed  ( +-  1.75% )
+
+
+ Performance counter stats for './mm-omp 1024 8' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       29706977205      cycles                                                                  ( +-  0.75% )
+        8842686735      instructions                     #    0.30  insn per cycle              ( +-  0.03% )
+
+           0.96237 +- 0.00187 seconds time elapsed  ( +-  0.19% )
+
+
+ Performance counter stats for './mm-omp 1024 9' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       27139907884      cycles                                                                  ( +-  2.05% )
+        8824850690      instructions                     #    0.33  insn per cycle              ( +-  0.01% )
+
+            0.9312 +- 0.0146 seconds time elapsed  ( +-  1.56% )
+
+
+ Performance counter stats for './mm-omp 1024 10' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       26290984544      cycles                                                                  ( +-  2.56% )
+        8825147349      instructions                     #    0.34  insn per cycle              ( +-  0.02% )
+
+            0.9143 +- 0.0225 seconds time elapsed  ( +-  2.46% )
+
+
+ Performance counter stats for './mm-omp 1024 11' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       27542772620      cycles                                                                  ( +-  1.35% )
+        8826303030      instructions                     #    0.32  insn per cycle              ( +-  0.00% )
+
+           0.94142 +- 0.00684 seconds time elapsed  ( +-  0.73% )
+
+
+ Performance counter stats for './mm-omp 1024 12' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       27767346509      cycles                                                                  ( +-  2.19% )
+        8826908624      instructions                     #    0.32  insn per cycle              ( +-  0.01% )
+
+            0.9385 +- 0.0152 seconds time elapsed  ( +-  1.62% )
+
+
+ Performance counter stats for './mm-omp 1024 13' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       28024886905      cycles                                                                  ( +-  1.37% )
+        8828066800      instructions                     #    0.32  insn per cycle              ( +-  0.00% )
+
+            0.9482 +- 0.0131 seconds time elapsed  ( +-  1.39% )
+
+
+ Performance counter stats for './mm-omp 1024 14' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       27993502039      cycles                                                                  ( +-  2.57% )
+        8830195629      instructions                     #    0.32  insn per cycle              ( +-  0.00% )
+
+            0.9492 +- 0.0132 seconds time elapsed  ( +-  1.39% )
+
+
+ Performance counter stats for './mm-omp 1024 15' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       28911154102      cycles                                                                  ( +-  1.80% )
+        8831670982      instructions                     #    0.31  insn per cycle              ( +-  0.01% )
+
+           0.96691 +- 0.00895 seconds time elapsed  ( +-  0.93% )
+
+
+ Performance counter stats for './mm-omp 1024 16' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       28092566397      cycles                                                                  ( +-  2.54% )
+        8832192897      instructions                     #    0.31  insn per cycle              ( +-  0.01% )
+
+            0.9418 +- 0.0154 seconds time elapsed  ( +-  1.63% )
+
+
+ Performance counter stats for './mm-omp 1024 17' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       29186720391      cycles                                                                  ( +-  0.49% )
+        8834624623      instructions                     #    0.30  insn per cycle              ( +-  0.01% )
+
+           0.97053 +- 0.00274 seconds time elapsed  ( +-  0.28% )
+
+
+ Performance counter stats for './mm-omp 1024 18' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       28594794399      cycles                                                                  ( +-  1.28% )
+        8837039504      instructions                     #    0.31  insn per cycle              ( +-  0.02% )
+
+           0.95886 +- 0.00817 seconds time elapsed  ( +-  0.85% )
+
+
+ Performance counter stats for './mm-omp 1024 19' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       28939227177      cycles                                                                  ( +-  0.65% )
+        8833897135      instructions                     #    0.31  insn per cycle              ( +-  0.00% )
+
+            0.9677 +- 0.0101 seconds time elapsed  ( +-  1.04% )
+
+
+ Performance counter stats for './mm-omp 1024 20' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       28499778442      cycles                                                                  ( +-  1.88% )
+        8835678992      instructions                     #    0.31  insn per cycle              ( +-  0.01% )
+
+            0.9558 +- 0.0156 seconds time elapsed  ( +-  1.63% )
+
+
+ Performance counter stats for './mm-omp 1024 21' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       29025964127      cycles                                                                  ( +-  0.65% )
+        8835412941      instructions                     #    0.30  insn per cycle              ( +-  0.01% )
+
+           0.96280 +- 0.00391 seconds time elapsed  ( +-  0.41% )
+
+
+ Performance counter stats for './mm-omp 1024 22' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       29494962684      cycles                                                                  ( +-  0.33% )
+        8836756806      instructions                     #    0.30  insn per cycle              ( +-  0.00% )
+
+          0.967098 +- 0.000961 seconds time elapsed  ( +-  0.10% )
+
+
+ Performance counter stats for './mm-omp 1024 23' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       29341164119      cycles                                                                  ( +-  0.28% )
+        8836590836      instructions                     #    0.30  insn per cycle              ( +-  0.00% )
+
+           0.96932 +- 0.00306 seconds time elapsed  ( +-  0.32% )
+
+
+ Performance counter stats for './mm-omp 1024 24' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       28860388810      cycles                                                                  ( +-  2.01% )
+        8838367339      instructions                     #    0.31  insn per cycle              ( +-  0.03% )
+
+           0.95929 +- 0.00993 seconds time elapsed  ( +-  1.04% )
+
+
+ Performance counter stats for './mm-omp 1024 25' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       28828073144      cycles                                                                  ( +-  1.72% )
+        8839151797      instructions                     #    0.31  insn per cycle              ( +-  0.03% )
+
+           0.95164 +- 0.00763 seconds time elapsed  ( +-  0.80% )
+
+
+ Performance counter stats for './mm-omp 1024 26' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       29164238521      cycles                                                                  ( +-  0.67% )
+        8837402720      instructions                     #    0.30  insn per cycle              ( +-  0.02% )
+
+           0.96092 +- 0.00608 seconds time elapsed  ( +-  0.63% )
+
+
+ Performance counter stats for './mm-omp 1024 27' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       29315024875      cycles                                                                  ( +-  0.43% )
+        8837371906      instructions                     #    0.30  insn per cycle              ( +-  0.00% )
+
+           0.96269 +- 0.00344 seconds time elapsed  ( +-  0.36% )
+
+
+ Performance counter stats for './mm-omp 1024 28' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       29409203011      cycles                                                                  ( +-  0.41% )
+        8837625372      instructions                     #    0.30  insn per cycle              ( +-  0.01% )
+
+           0.96686 +- 0.00886 seconds time elapsed  ( +-  0.92% )
+
+
+ Performance counter stats for './mm-omp 1024 29' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       28943500763      cycles                                                                  ( +-  1.74% )
+        8839630802      instructions                     #    0.31  insn per cycle              ( +-  0.02% )
+
+           0.95873 +- 0.00840 seconds time elapsed  ( +-  0.88% )
+
+
+ Performance counter stats for './mm-omp 1024 30' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       29387040857      cycles                                                                  ( +-  0.45% )
+        8838170886      instructions                     #    0.30  insn per cycle              ( +-  0.00% )
+
+           0.96695 +- 0.00425 seconds time elapsed  ( +-  0.44% )
+

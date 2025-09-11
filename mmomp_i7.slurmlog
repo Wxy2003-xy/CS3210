@@ -1,0 +1,83 @@
+
+ Performance counter stats for './mm-omp 512 4' (3 runs):
+
+         268435456      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+         682180785      cycles                                                                  ( +-  0.06% )
+        1128632978      instructions                     #    1.65  insn per cycle              ( +-  0.01% )
+
+           0.04873 +- 0.00499 seconds time elapsed  ( +- 10.24% )
+
+
+ Performance counter stats for './mm-omp 1024 4' (3 runs):
+
+        2147483648      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        4670261093      cycles                                                                  ( +-  0.29% )
+        8792565935      instructions                     #    1.88  insn per cycle              ( +-  0.00% )
+
+          0.311267 +- 0.000936 seconds time elapsed  ( +-  0.30% )
+
+
+ Performance counter stats for './mm-omp 1536 4' (3 runs):
+
+        7247757312      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+       28969460389      cycles                                                                  ( +-  0.66% )
+       29469095823      instructions                     #    1.02  insn per cycle              ( +-  0.01% )
+
+            1.8702 +- 0.0100 seconds time elapsed  ( +-  0.54% )
+
+
+ Performance counter stats for './mm-omp 2048 4' (3 runs):
+
+       17179869184      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+      129305721100      cycles                                                                  ( +-  0.09% )
+       69677104492      instructions                     #    0.54  insn per cycle              ( +-  0.00% )
+
+           8.19920 +- 0.00841 seconds time elapsed  ( +-  0.10% )
+
+
+ Performance counter stats for './mm-omp 2560 4' (3 runs):
+
+       33554432000      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+      259871169126      cycles                                                                  ( +-  0.11% )
+      135799245299      instructions                     #    0.52  insn per cycle              ( +-  0.00% )
+
+           16.4455 +- 0.0194 seconds time elapsed  ( +-  0.12% )
+
+
+ Performance counter stats for './mm-omp 3072 4' (3 runs):
+
+       57982058496      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+      472816390615      cycles                                                                  ( +-  0.10% )
+      234342602660      instructions                     #    0.50  insn per cycle              ( +-  0.00% )
+
+           29.8569 +- 0.0259 seconds time elapsed  ( +-  0.09% )
+
+
+ Performance counter stats for './mm-omp 3584 4' (3 runs):
+
+       92073361408      fp_arith_inst_retired.scalar_single                                      
+                 0      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+      781316366788      cycles                                                                  ( +-  0.15% )
+      371791507783      instructions                     #    0.48  insn per cycle              ( +-  0.00% )
+
+           49.3148 +- 0.0520 seconds time elapsed  ( +-  0.11% )
+
+slurmstepd-soctf-pdc-012: error: *** STEP 788121.1 ON soctf-pdc-012 CANCELLED AT 2025-09-11T17:37:09 DUE TO TIME LIMIT ***
+slurmstepd-soctf-pdc-012: error: *** JOB 788121 ON soctf-pdc-012 CANCELLED AT 2025-09-11T17:37:09 DUE TO TIME LIMIT ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: got SIGCONT
+srun: forcing job termination
+srun: error: soctf-pdc-012: task 0: Terminated

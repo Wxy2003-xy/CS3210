@@ -1,0 +1,330 @@
+
+ Performance counter stats for './mrow 1024 1' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+         984864625      cycles                                                                  ( +-  0.09% )
+        2357275279      instructions                     #    2.39  insn per cycle              ( +-  0.01% )
+
+          0.238171 +- 0.000920 seconds time elapsed  ( +-  0.39% )
+
+
+ Performance counter stats for './mrow 1024 2' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1033600560      cycles                                                                  ( +-  0.05% )
+        2359625399      instructions                     #    2.28  insn per cycle              ( +-  0.00% )
+
+           0.14152 +- 0.00216 seconds time elapsed  ( +-  1.52% )
+
+
+ Performance counter stats for './mrow 1024 3' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1078917035      cycles                                                                  ( +-  0.17% )
+        2362073850      instructions                     #    2.19  insn per cycle              ( +-  0.00% )
+
+           0.11119 +- 0.00521 seconds time elapsed  ( +-  4.69% )
+
+
+ Performance counter stats for './mrow 1024 4' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1124430181      cycles                                                                  ( +-  0.12% )
+        2364360691      instructions                     #    2.10  insn per cycle              ( +-  0.01% )
+
+          0.089741 +- 0.000776 seconds time elapsed  ( +-  0.86% )
+
+
+ Performance counter stats for './mrow 1024 5' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1624390140      cycles                                                                  ( +-  0.14% )
+        2373839856      instructions                     #    1.46  insn per cycle              ( +-  0.01% )
+
+          0.118308 +- 0.000460 seconds time elapsed  ( +-  0.39% )
+
+
+ Performance counter stats for './mrow 1024 6' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1852154579      cycles                                                                  ( +-  0.66% )
+        2374814698      instructions                     #    1.28  insn per cycle              ( +-  0.00% )
+
+           0.10787 +- 0.00245 seconds time elapsed  ( +-  2.27% )
+
+
+ Performance counter stats for './mrow 1024 7' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1999572956      cycles                                                                  ( +-  0.01% )
+        2374773662      instructions                     #    1.19  insn per cycle              ( +-  0.00% )
+
+           0.09893 +- 0.00305 seconds time elapsed  ( +-  3.09% )
+
+
+ Performance counter stats for './mrow 1024 8' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        2227010234      cycles                                                                  ( +-  4.89% )
+        2380115060      instructions                     #    1.07  insn per cycle              ( +-  0.21% )
+
+           0.09708 +- 0.00515 seconds time elapsed  ( +-  5.31% )
+
+
+ Performance counter stats for './mrow 1024 9' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1788421576      cycles                                                                  ( +-  0.06% )
+        2360637588      instructions                     #    1.32  insn per cycle              ( +-  0.00% )
+
+          0.104611 +- 0.000266 seconds time elapsed  ( +-  0.25% )
+
+
+ Performance counter stats for './mrow 1024 10' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1688241065      cycles                                                                  ( +-  1.68% )
+        2360821011      instructions                     #    1.40  insn per cycle              ( +-  0.01% )
+
+           0.10419 +- 0.00681 seconds time elapsed  ( +-  6.54% )
+
+
+ Performance counter stats for './mrow 1024 11' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1739297739      cycles                                                                  ( +-  1.21% )
+        2360935756      instructions                     #    1.36  insn per cycle              ( +-  0.01% )
+
+           0.09453 +- 0.00179 seconds time elapsed  ( +-  1.89% )
+
+
+ Performance counter stats for './mrow 1024 12' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1743487267      cycles                                                                  ( +-  1.80% )
+        2361443648      instructions                     #    1.35  insn per cycle              ( +-  0.00% )
+
+           0.09416 +- 0.00249 seconds time elapsed  ( +-  2.64% )
+
+
+ Performance counter stats for './mrow 1024 13' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1768872528      cycles                                                                  ( +-  0.15% )
+        2361147063      instructions                     #    1.33  insn per cycle              ( +-  0.01% )
+
+           0.09503 +- 0.00174 seconds time elapsed  ( +-  1.83% )
+
+
+ Performance counter stats for './mrow 1024 14' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1746553534      cycles                                                                  ( +-  1.11% )
+        2361868384      instructions                     #    1.35  insn per cycle              ( +-  0.01% )
+
+          0.092449 +- 0.000587 seconds time elapsed  ( +-  0.64% )
+
+
+ Performance counter stats for './mrow 1024 15' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1763959566      cycles                                                                  ( +-  0.92% )
+        2362035540      instructions                     #    1.34  insn per cycle              ( +-  0.00% )
+
+           0.10156 +- 0.00912 seconds time elapsed  ( +-  8.98% )
+
+
+ Performance counter stats for './mrow 1024 16' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1764052629      cycles                                                                  ( +-  0.88% )
+        2362162797      instructions                     #    1.34  insn per cycle              ( +-  0.01% )
+
+           0.09709 +- 0.00706 seconds time elapsed  ( +-  7.27% )
+
+
+ Performance counter stats for './mrow 1024 17' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1773317250      cycles                                                                  ( +-  0.58% )
+        2362659191      instructions                     #    1.33  insn per cycle              ( +-  0.02% )
+
+           0.09516 +- 0.00404 seconds time elapsed  ( +-  4.25% )
+
+
+ Performance counter stats for './mrow 1024 18' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1770564021      cycles                                                                  ( +-  0.34% )
+        2362824363      instructions                     #    1.33  insn per cycle              ( +-  0.01% )
+
+          0.090904 +- 0.000467 seconds time elapsed  ( +-  0.51% )
+
+
+ Performance counter stats for './mrow 1024 19' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1779852637      cycles                                                                  ( +-  0.12% )
+        2362583612      instructions                     #    1.33  insn per cycle              ( +-  0.01% )
+
+           0.09320 +- 0.00363 seconds time elapsed  ( +-  3.90% )
+
+
+ Performance counter stats for './mrow 1024 20' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1780368466      cycles                                                                  ( +-  0.08% )
+        2363342536      instructions                     #    1.33  insn per cycle              ( +-  0.01% )
+
+           0.09379 +- 0.00402 seconds time elapsed  ( +-  4.29% )
+
+
+ Performance counter stats for './mrow 1024 21' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1780083026      cycles                                                                  ( +-  0.30% )
+        2363479502      instructions                     #    1.33  insn per cycle              ( +-  0.01% )
+
+           0.09212 +- 0.00234 seconds time elapsed  ( +-  2.54% )
+
+
+ Performance counter stats for './mrow 1024 22' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1786642444      cycles                                                                  ( +-  0.21% )
+        2363254186      instructions                     #    1.32  insn per cycle              ( +-  0.01% )
+
+           0.09410 +- 0.00526 seconds time elapsed  ( +-  5.59% )
+
+
+ Performance counter stats for './mrow 1024 23' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1783520738      cycles                                                                  ( +-  0.42% )
+        2363770036      instructions                     #    1.33  insn per cycle              ( +-  0.01% )
+
+          0.090444 +- 0.000596 seconds time elapsed  ( +-  0.66% )
+
+
+ Performance counter stats for './mrow 1024 24' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1781585771      cycles                                                                  ( +-  0.07% )
+        2364053602      instructions                     #    1.33  insn per cycle              ( +-  0.00% )
+
+           0.09823 +- 0.00713 seconds time elapsed  ( +-  7.26% )
+
+
+ Performance counter stats for './mrow 1024 25' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1786753590      cycles                                                                  ( +-  0.26% )
+        2363934213      instructions                     #    1.32  insn per cycle              ( +-  0.01% )
+
+           0.09333 +- 0.00343 seconds time elapsed  ( +-  3.68% )
+
+
+ Performance counter stats for './mrow 1024 26' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1789104148      cycles                                                                  ( +-  0.30% )
+        2364402502      instructions                     #    1.32  insn per cycle              ( +-  0.01% )
+
+          0.089974 +- 0.000293 seconds time elapsed  ( +-  0.33% )
+
+
+ Performance counter stats for './mrow 1024 27' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1784346598      cycles                                                                  ( +-  0.12% )
+        2364458132      instructions                     #    1.33  insn per cycle              ( +-  0.01% )
+
+           0.09298 +- 0.00233 seconds time elapsed  ( +-  2.51% )
+
+
+ Performance counter stats for './mrow 1024 28' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1785944501      cycles                                                                  ( +-  0.20% )
+        2364653700      instructions                     #    1.32  insn per cycle              ( +-  0.01% )
+
+          0.090500 +- 0.000313 seconds time elapsed  ( +-  0.35% )
+
+
+ Performance counter stats for './mrow 1024 29' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1788889703      cycles                                                                  ( +-  0.23% )
+        2364738697      instructions                     #    1.32  insn per cycle              ( +-  0.02% )
+
+           0.09188 +- 0.00131 seconds time elapsed  ( +-  1.43% )
+
+
+ Performance counter stats for './mrow 1024 30' (3 runs):
+
+                 0      fp_arith_inst_retired.scalar_single                                      
+         536870912      fp_arith_inst_retired.128b_packed_single                                      
+                 0      fp_arith_inst_retired.256b_packed_single                                      
+        1794613321      cycles                                                                  ( +-  0.03% )
+        2365122717      instructions                     #    1.32  insn per cycle              ( +-  0.00% )
+
+          0.090940 +- 0.000490 seconds time elapsed  ( +-  0.54% )
+
