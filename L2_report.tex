@@ -1,5 +1,5 @@
 \documentclass[a4paper]{article}
-\usepackage[margin=0.7in]{geometry}
+\usepackage[margin=0.8in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
@@ -49,8 +49,7 @@ and Xeon Silver 4114 (10 cores 20 cores) in performance measured
  by instruction per cycle(IPC), wall clock time(elapsed time)
   and MFLOPS(Million floating point operations). 
   Both processors have the same core architecture.
-\subsection*{Instruction per Cycle}
-\par\vspace{3ex}
+\subsection*{Instruction per Cycle \& Elapsed time}
 \begin{minipage}{0.5\linewidth}
     \noindent\makebox[\columnwidth][c]{%
         \includegraphics[
@@ -59,14 +58,8 @@ and Xeon Silver 4114 (10 cores 20 cores) in performance measured
         ]{ipc.png}
     }
 \end{minipage}\hfill
-\begin{minipage}{0.4\linewidth}
-    We can observe that for i7-7700 IPC moderately decreases from 1 to 4 threads, and IPC on Xeon 4114 
-    also moderately decreases at similar rate from 1 to 10 threads,
-    indicating that there exist overhead of thread scheduling 
-\end{minipage}\hfill
-\subsection*{Wall clock time}
 \begin{minipage}{0.5\linewidth}
-    \noindent\makebox[\columnwidth][c]{%
+  \noindent\makebox[\columnwidth][c]{%
   \includegraphics[
     width=\columnwidth,
     trim=0 0 0 0,
@@ -74,9 +67,15 @@ and Xeon Silver 4114 (10 cores 20 cores) in performance measured
   ]{time.png}
 }
 \end{minipage}\hfill
-\begin{minipage}{0.4\linewidth}
-aaa
-\end{minipage}\hfill
+We can observe that for i7-7700 IPC moderately decreases from 1 to 4 threads, and IPC on Xeon 4114 
+also moderately decreases at similar rate from 1 to 10 threads,
+indicating that there exist overhead of thread scheduling, therefore the number of instructions 
+for the actual task counted in floating point operations decreases. But the overall performance measured in wall 
+clock time improves rapidly as there are more processing units being utilized. \\
+When the number of threads = the number of PUs the wall clock time reaches minimum, as all PUs are utilized while 
+and there is no extra overhead associated with scheduling incurs. When the number of PUs < number of threads < number of cores, instruction per cycle for both
+machines decreases more quickly, as other than the task allocation overhead, there is memory overhead incurred as well, since both PUs 
+in the same core share the same cache, and when both PUs are being utilized, there can be memory contention. 
 \par\vspace{3ex}
 \subsection*{MFLOPS}
 \begin{minipage}{0.5\linewidth}
@@ -105,14 +104,13 @@ if we can access contiguous cache in consecutive instructions. As 2D arrays are 
 but the second matrix is accessed by columns first, ie jumping by \texttt{B.size()}. If we can access matrix B row-wise we can utilize AVX
 instructions to perform packed floating point operations. 
 \begin{align*}
-    AB[i][j] &= \sum_{k=0}^{\texttt{A[0].size()}} A[i][k] \times B[k][j]\\
+    AB[i][j] &= \sum_{k=0}^{\texttt{A[0].size()}-1} A[i][k] \times B[k][j]
 \end{align*}
-We can observe that the order of the accessing order does not matter so long as we ensure in the innermost loop:
-\begin{enumerate}
-    \item All elements from \texttt{A[i]} and column \texttt{i} of B... 
-\end{enumerate}
+We can observe that the order of the accessing order does not matter, as it does not change the way each cell in the result matrix is updated, 
+therefore algebraically the result is the same; numerically, floating-point non-associativity may cause small rounding differences, but that's 
+a trade-off for better performance.
 \par\vspace{3ex}
-\begin{minipage}{0.5\linewidth}
+\begin{minipage}{0.4\linewidth}
 \begin{Verbatim}[frame=topline,numbers=left,label= Original,framesep=3mm]
 for (i = 0; i < size; i++)
     for (j = 0; j < size; j++)
@@ -124,13 +122,48 @@ for (i = 0; i < size; i++)
 \begin{Verbatim}[frame=topline,numbers=left,label= Optimized,framesep=3mm]
 for (i = 0; i < size; i++)
     for (k = 0; k < size; k++)
-        for (k = 0; k < size; k++)
+        for (j = 0; j < size; j++)
             AB[i][j] += A[i][k] * B[k][j];
 \end{Verbatim}
 \end{minipage}\hfill
-
-
-
+\par\vspace{3ex}
+\begin{minipage}{0.5\linewidth}
+  \noindent\makebox[\columnwidth][c]{%
+  \includegraphics[
+    width=\columnwidth,
+    trim=0 0 0 0,
+    clip
+  ]{rthread.png}
+}
+\end{minipage}\hfill
+\begin{minipage}{0.5\linewidth}
+  \noindent\makebox[\columnwidth][c]{%
+  \includegraphics[
+    width=\columnwidth,
+    trim=0 0 0 0,
+    clip
+  ]{rthread_time.png}
+}
+\end{minipage}\hfill
+\par\vspace{3ex}
+\begin{minipage}{0.5\linewidth}
+  \noindent\makebox[\columnwidth][c]{%
+  \includegraphics[
+    width=\columnwidth,
+    trim=0 0 0 0,
+    clip
+  ]{rsize.png}
+}
+\end{minipage}\hfill
+\begin{minipage}{0.5\linewidth}
+  \noindent\makebox[\columnwidth][c]{%
+  \includegraphics[
+    width=\columnwidth,
+    trim=0 0 0 0,
+    clip
+  ]{rsize_time.png}
+}
+\end{minipage}\hfill
 \section*{Reproduce result}
 
 compile \& perf sampling options:
