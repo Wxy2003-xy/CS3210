@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.22)  11 SEP 2025 22:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.22)  15 SEP 2025 09:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,10 +6,18 @@ entering extended mode
 **/Users/wxy/Desktop/CS3210/L2_report
 (/Users/wxy/Desktop/CS3210/L2_report.tex
 LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
-(/usr/local/texlive/2023/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/extsizes/extarticle.cls
+Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
+(/usr/local/texlive/2023/texmf-dist/tex/latex/extsizes/size9.clo
+File: size9.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/base/exscale.sty
+Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+\big@size=\dimen140
 )
 \c@part=\count185
 \c@section=\count186
@@ -21,7 +29,7 @@ File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \c@table=\count192
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
-\bibindent=\dimen140
+\bibindent=\dimen141
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
@@ -35,14 +43,14 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@cnth=\count193
 \Gm@cntv=\count194
 \c@Gm@tempcnt=\count195
-\Gm@bindingoffset=\dimen141
-\Gm@wd@mp=\dimen142
-\Gm@odd@mp=\dimen143
-\Gm@even@mp=\dimen144
-\Gm@layoutwidth=\dimen145
-\Gm@layoutheight=\dimen146
-\Gm@layouthoffset=\dimen147
-\Gm@layoutvoffset=\dimen148
+\Gm@bindingoffset=\dimen142
+\Gm@wd@mp=\dimen143
+\Gm@odd@mp=\dimen144
+\Gm@even@mp=\dimen145
+\Gm@layoutwidth=\dimen146
+\Gm@layoutheight=\dimen147
+\Gm@layouthoffset=\dimen148
+\Gm@layoutvoffset=\dimen149
 \Gm@dimlist=\toks17
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
@@ -94,10 +102,10 @@ Package: amstext 2021/08/26 v2.01 AMS text
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
-\ex@=\dimen149
+\ex@=\dimen150
 )) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen150
+\pmbraise@=\dimen151
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
@@ -118,7 +126,7 @@ LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen151
+\big@size=\dimen152
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count267
@@ -136,12 +144,12 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \column@=\count272
 \maxfields@=\count273
 \andhelp@=\toks22
-\eqnshift@=\dimen152
-\alignsep@=\dimen153
-\tagshift@=\dimen154
-\tagwidth@=\dimen155
-\totwidth@=\dimen156
-\lineht@=\dimen157
+\eqnshift@=\dimen153
+\alignsep@=\dimen154
+\tagshift@=\dimen155
+\tagwidth@=\dimen156
+\totwidth@=\dimen157
+\lineht@=\dimen158
 \@envbody=\toks23
 \multlinegap=\skip51
 \multlinetaggap=\skip52
@@ -189,8 +197,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 )
-\Gin@req@height=\dimen158
-\Gin@req@width=\dimen159
+\Gin@req@height=\dimen159
+\Gin@req@width=\dimen160
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks26
@@ -209,14 +217,14 @@ Package: amsthm 2020/05/29 v2.20.6
 \lst@gtempboxa=\box53
 \lst@token=\toks32
 \lst@length=\count276
-\lst@currlwidth=\dimen160
+\lst@currlwidth=\dimen161
 \lst@column=\count277
 \lst@pos=\count278
-\lst@lostspace=\dimen161
-\lst@width=\dimen162
+\lst@lostspace=\dimen162
+\lst@width=\dimen163
 \lst@newlines=\count279
 \lst@lineno=\count280
-\lst@maxwidth=\dimen163
+\lst@maxwidth=\dimen164
  (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 \c@lstnumber=\count281
@@ -292,7 +300,7 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count290
 )
-\@linkdim=\dimen164
+\@linkdim=\dimen165
 \Hy@linkcounter=\count291
 \Hy@pagecounter=\count292
  (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/pd1enc.def
@@ -323,15 +331,15 @@ Package hyperref Info: Bookmarks ON on input line 4425.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen165
+\XeTeXLinkMargin=\dimen166
  (/usr/local/texlive/2023/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/local/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count295
-\Field@Width=\dimen166
-\Fld@charsize=\dimen167
+\Field@Width=\dimen167
+\Fld@charsize=\dimen168
 Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
@@ -402,27 +410,27 @@ LaTeX Font Info:    ... okay on input line 40.
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: a4paper
+* paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(57.81621pt, 481.87546pt, 57.81621pt)
-* v-part:(T,H,B)=(57.81621pt, 729.41443pt, 57.81621pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=481.87546pt
-* \textheight=729.41443pt
-* \oddsidemargin=-14.45378pt
-* \evensidemargin=-14.45378pt
-* \topmargin=-51.45378pt
+* h-part:(L,W,R)=(50.58878pt, 513.11745pt, 50.58878pt)
+* v-part:(T,H,B)=(50.58878pt, 693.79243pt, 50.58878pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=513.11745pt
+* \textheight=693.79243pt
+* \oddsidemargin=-21.68121pt
+* \evensidemargin=-21.68121pt
+* \topmargin=-58.68121pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=10.0pt
+* \topskip=9.0pt
 * \footskip=30.0pt
-* \marginparwidth=57.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=74.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=8.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -435,13 +443,13 @@ LaTeX Font Info:    ... okay on input line 40.
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count302
-\scratchdimen=\dimen168
+\scratchdimen=\dimen169
 \scratchbox=\box57
 \nofMPsegments=\count303
 \nofMParguments=\count304
 \everyMPshowfont=\toks35
 \MPscratchCnt=\count305
-\MPscratchDim=\dimen169
+\MPscratchDim=\dimen170
 \MPnumerator=\count306
 \makeMPintoPDFobject=\count307
 \everyMPtoPDFconversion=\toks36
@@ -474,11 +482,11 @@ LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 4
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 46.
+(Font)              <10> on input line 46.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 46.
+(Font)              <7> on input line 46.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 46.
+(Font)              <5> on input line 46.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -490,82 +498,70 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <ipc.png, id=4, 702.625pt x 433.62pt>
 File: ipc.png Graphic file (type png)
 <use ipc.png>
-Package pdftex.def Info: ipc.png  used on input line 59.
-(pdftex.def)             Requested size: 240.93773pt x 148.6926pt.
+Package pdftex.def Info: ipc.png  used on input line 60.
+(pdftex.def)             Requested size: 256.55872pt x 158.33945pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 60.
+(Font)              <9> on input line 61.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 60.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 60.
+(Font)              <6> on input line 61.
 <time.png, id=7, 702.625pt x 433.62pt>
 File: time.png Graphic file (type png)
 <use time.png>
-Package pdftex.def Info: time.png  used on input line 68.
-(pdftex.def)             Requested size: 240.93773pt x 148.6926pt.
+Package pdftex.def Info: time.png  used on input line 69.
+(pdftex.def)             Requested size: 256.55872pt x 158.33945pt.
 <mflops.png, id=9, 702.625pt x 433.62pt>
 File: mflops.png Graphic file (type png)
 <use mflops.png>
-Package pdftex.def Info: mflops.png  used on input line 88.
-(pdftex.def)             Requested size: 240.93773pt x 148.6926pt.
-LaTeX Font Info:    Trying to load font information for T1+zlmtt on input line 104.
+Package pdftex.def Info: mflops.png  used on input line 85.
+(pdftex.def)             Requested size: 256.55872pt x 158.33945pt.
+LaTeX Font Info:    Trying to load font information for T1+zlmtt on input line 103.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/zlmtt/t1zlmtt.fd
 File: t1zlmtt.fd 2014/02/07 v1.0 Alternate font definitions for Latin Modern Typewriter, Michael Sharpe
 )
 LaTeX Font Info:    Font shape `T1/zlmtt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 104.
+(Font)              scaled to size 9.0pt on input line 103.
  [1
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./ipc.png> <./time.png> <./mflops.png>]
-<rthread.png, id=30, 702.625pt x 433.62pt>
-File: rthread.png Graphic file (type png)
-<use rthread.png>
-Package pdftex.def Info: rthread.png  used on input line 137.
-(pdftex.def)             Requested size: 240.93773pt x 148.6926pt.
-<rthread_time.png, id=32, 702.625pt x 433.62pt>
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <./ipc.png> <./time.png> <./mflops.png>]
+<LLC.png, id=38, 702.625pt x 433.62pt>
+File: LLC.png Graphic file (type png)
+<use LLC.png>
+Package pdftex.def Info: LLC.png  used on input line 145.
+(pdftex.def)             Requested size: 230.90128pt x 142.49956pt.
+<dTLB.png, id=40, 702.625pt x 433.62pt>
+File: dTLB.png Graphic file (type png)
+<use dTLB.png>
+Package pdftex.def Info: dTLB.png  used on input line 154.
+(pdftex.def)             Requested size: 256.55872pt x 158.33945pt.
+<rthread_time.png, id=42, 702.625pt x 433.62pt>
 File: rthread_time.png Graphic file (type png)
 <use rthread_time.png>
-Package pdftex.def Info: rthread_time.png  used on input line 146.
-(pdftex.def)             Requested size: 240.93773pt x 148.6926pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 130--148
-[]$[]$ $[]$ 
- []
-
-<rsize.png, id=34, 702.625pt x 433.62pt>
-File: rsize.png Graphic file (type png)
-<use rsize.png>
-Package pdftex.def Info: rsize.png  used on input line 156.
-(pdftex.def)             Requested size: 240.93773pt x 148.6926pt.
-<rsize_time.png, id=36, 702.625pt x 433.62pt>
+Package pdftex.def Info: rthread_time.png  used on input line 163.
+(pdftex.def)             Requested size: 230.90128pt x 142.49956pt.
+<rsize_time.png, id=44, 702.625pt x 433.62pt>
 File: rsize_time.png Graphic file (type png)
 <use rsize_time.png>
-Package pdftex.def Info: rsize_time.png  used on input line 165.
-(pdftex.def)             Requested size: 240.93773pt x 148.6926pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 149--167
-[]$[]$ $[]$ 
- []
-
+Package pdftex.def Info: rsize_time.png  used on input line 172.
+(pdftex.def)             Requested size: 256.55872pt x 158.33945pt.
 LaTeX Font Info:    Font shape `T1/zlmtt/m/n' will be
-(Font)              scaled to size 9.0pt on input line 170.
-[2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <./rthread.png> <./rthread_time.png> <./rsize.png> <./rsize_time.png>] (./L2_report.aux)
+(Font)              scaled to size 8.0pt on input line 177.
+ [2 <./LLC.png> <./dTLB.png> <./rthread_time.png> <./rsize_time.png>] (./L2_report.aux)
 Package rerunfilecheck Info: File `L2_report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13494 strings out of 476025
- 205843 string characters out of 5790016
+ 13523 strings out of 476025
+ 208333 string characters out of 5790016
  1877388 words of memory out of 5000000
- 33702 multiletter control sequences out of 15000+600000
- 565590 words of font info for 77 fonts, out of 8000000 for 9000
+ 33729 multiletter control sequences out of 15000+600000
+ 561839 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,76p,407b,1162s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on L2_report.pdf (2 pages, 473679 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
+Output written on L2_report.pdf (2 pages, 464922 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 134 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
  13 named destinations out of 1000 (max. 500000)
  78 words of extra memory for PDF output out of 10000 (max. 10000000)
 

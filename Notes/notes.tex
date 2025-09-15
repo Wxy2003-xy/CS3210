@@ -211,10 +211,21 @@ Parallel computers:
     \item Bandwidth: the rate at which the memory system can provide data to the processor
     \item stall: When the processor cannot run the next instruction in an instruction stream due to dependency on a previous instrucion 
 \end{itemize}
+\subsection{Data and task parallelism}
+\begin{itemize}
+    \item Data parallelism: multiple processing units carry out similar task on different part of data eg SIMD, SPMD in MIMD
+    \item Task/functional parallelism: partition the task to solve among different PUs
+\end{itemize}
+\subsection{Task dependency and degree of concurrency}
+Task dependency graph is a directed acyclic graph, nodes represent tasks with its execution time as value. This represents the control
+dependency between the tasks. 
+\begin{itemize}
+    \item critical path: the longest path 
+    \item degree of concurrency: $\frac{\sum \text{work}}{\text{critical path length}}$, an  indication of the amount of work that can be done in concurrence
+\end{itemize}
 
 \section{Performance}
 Goal: reduce response time: wall clock time
-
 \subsection{sequential}
 
 \begin{itemize}

@@ -1,270 +1,63 @@
 
- Performance counter stats for './mm-omp 1024 1' (20 runs):
+ Performance counter stats for './mm-omp 512 4' (10 runs):
 
-        1280984056      L1-dcache-load-misses                                                   ( +-  0.00% )
-            221679      LLC-load-misses                                                         ( +- 25.00% )
-             14034      dTLB-load-misses                                                        ( +- 18.47% )
+         113986668      L1-dcache-load-misses                                                   ( +-  0.14% )
+              1651      LLC-load-misses                                                         ( +-  9.15% )
+              4216      dTLB-load-misses                                                        ( +-  1.73% )
 
-           1.09835 +- 0.00366 seconds time elapsed  ( +-  0.33% )
+          0.044640 +- 0.000959 seconds time elapsed  ( +-  2.15% )
 
 
- Performance counter stats for './mm-omp 1024 2' (20 runs):
+ Performance counter stats for './mm-omp 1024 4' (10 runs):
 
-        1281364122      L1-dcache-load-misses                                                   ( +-  0.01% )
-            226374      LLC-load-misses                                                         ( +- 30.65% )
-             17109      dTLB-load-misses                                                        ( +- 17.19% )
+        1281435618      L1-dcache-load-misses                                                   ( +-  0.01% )
+            134455      LLC-load-misses                                                         ( +- 13.33% )
+             20721      dTLB-load-misses                                                        ( +-  4.35% )
 
-           0.58316 +- 0.00350 seconds time elapsed  ( +-  0.60% )
+           0.31792 +- 0.00136 seconds time elapsed  ( +-  0.43% )
 
 
- Performance counter stats for './mm-omp 1024 3' (20 runs):
+ Performance counter stats for './mm-omp 1536 4' (10 runs):
 
-        1280742389      L1-dcache-load-misses                                                   ( +-  0.01% )
-             92708      LLC-load-misses                                                         ( +- 25.47% )
-             18209      dTLB-load-misses                                                        ( +- 22.04% )
+        4979085134      L1-dcache-load-misses                                                   ( +-  0.07% )
+          18682500      LLC-load-misses                                                         ( +-  1.09% )
+        1514981280      dTLB-load-misses                                                        ( +-  1.17% )
 
-           0.40044 +- 0.00184 seconds time elapsed  ( +-  0.46% )
+            1.8996 +- 0.0159 seconds time elapsed  ( +-  0.84% )
 
 
- Performance counter stats for './mm-omp 1024 4' (20 runs):
+ Performance counter stats for './mm-omp 2048 4' (10 runs):
 
-        1281279543      L1-dcache-load-misses                                                   ( +-  0.01% )
-             64625      LLC-load-misses                                                         ( +- 20.50% )
-             17595      dTLB-load-misses                                                        ( +-  3.63% )
+       12415522801      L1-dcache-load-misses                                                   ( +-  0.01% )
+          71369824      LLC-load-misses                                                         ( +-  3.50% )
+        8618097378      dTLB-load-misses                                                        ( +-  0.00% )
 
-          0.313616 +- 0.000736 seconds time elapsed  ( +-  0.23% )
+           8.21826 +- 0.00546 seconds time elapsed  ( +-  0.07% )
 
 
- Performance counter stats for './mm-omp 1024 5' (20 runs):
+ Performance counter stats for './mm-omp 2560 4' (10 runs):
 
-        1263582756      L1-dcache-load-misses                                                   ( +-  0.15% )
-            174133      LLC-load-misses                                                         ( +- 14.72% )
-          76429832      dTLB-load-misses                                                        ( +-  0.78% )
+       25288024380      L1-dcache-load-misses                                                   ( +-  0.00% )
+         211868257      LLC-load-misses                                                         ( +-  8.33% )
+       16731609257      dTLB-load-misses                                                        ( +-  0.05% )
 
-           0.47921 +- 0.00131 seconds time elapsed  ( +-  0.27% )
+          16.47954 +- 0.00934 seconds time elapsed  ( +-  0.06% )
 
-
- Performance counter stats for './mm-omp 1024 6' (20 runs):
-
-        1254620207      L1-dcache-load-misses                                                   ( +-  0.24% )
-            125125      LLC-load-misses                                                         ( +- 12.68% )
-         133502582      dTLB-load-misses                                                        ( +-  0.56% )
-
-           0.42062 +- 0.00137 seconds time elapsed  ( +-  0.33% )
-
-
- Performance counter stats for './mm-omp 1024 7' (20 runs):
-
-        1237764587      L1-dcache-load-misses                                                   ( +-  0.32% )
-            200404      LLC-load-misses                                                         ( +- 47.24% )
-         282423672      dTLB-load-misses                                                        ( +-  1.71% )
-
-           0.52766 +- 0.00482 seconds time elapsed  ( +-  0.91% )
-
-
- Performance counter stats for './mm-omp 1024 8' (20 runs):
-
-        1232676696      L1-dcache-load-misses                                                   ( +-  0.39% )
-             94847      LLC-load-misses                                                         ( +- 13.89% )
-        1043950162      dTLB-load-misses                                                        ( +-  0.94% )
-
-           0.95982 +- 0.00286 seconds time elapsed  ( +-  0.30% )
-
-
- Performance counter stats for './mm-omp 1024 9' (20 runs):
-
-        1253510855      L1-dcache-load-misses                                                   ( +-  0.26% )
-             93813      LLC-load-misses                                                         ( +- 16.31% )
-         969049884      dTLB-load-misses                                                        ( +-  0.98% )
-
-           0.93044 +- 0.00468 seconds time elapsed  ( +-  0.50% )
-
-
- Performance counter stats for './mm-omp 1024 10' (20 runs):
-
-        1261009184      L1-dcache-load-misses                                                   ( +-  0.32% )
-             85302      LLC-load-misses                                                         ( +- 23.29% )
-         957428962      dTLB-load-misses                                                        ( +-  1.05% )
-
-           0.92940 +- 0.00649 seconds time elapsed  ( +-  0.70% )
-
-
- Performance counter stats for './mm-omp 1024 11' (20 runs):
-
-        1266759514      L1-dcache-load-misses                                                   ( +-  0.30% )
-             81041      LLC-load-misses                                                         ( +- 20.46% )
-         954456616      dTLB-load-misses                                                        ( +-  0.86% )
-
-           0.92447 +- 0.00443 seconds time elapsed  ( +-  0.48% )
-
-
- Performance counter stats for './mm-omp 1024 12' (20 runs):
-
-        1270334925      L1-dcache-load-misses                                                   ( +-  0.36% )
-            122672      LLC-load-misses                                                         ( +- 22.92% )
-         984473448      dTLB-load-misses                                                        ( +-  1.03% )
-
-           0.93902 +- 0.00597 seconds time elapsed  ( +-  0.64% )
-
-
- Performance counter stats for './mm-omp 1024 13' (20 runs):
-
-        1272125912      L1-dcache-load-misses                                                   ( +-  0.24% )
-            105363      LLC-load-misses                                                         ( +- 18.85% )
-        1006721226      dTLB-load-misses                                                        ( +-  0.82% )
-
-           0.95069 +- 0.00481 seconds time elapsed  ( +-  0.51% )
-
-
- Performance counter stats for './mm-omp 1024 14' (20 runs):
-
-        1276195354      L1-dcache-load-misses                                                   ( +-  0.18% )
-            135980      LLC-load-misses                                                         ( +- 13.11% )
-        1006701021      dTLB-load-misses                                                        ( +-  0.82% )
-
-           0.95010 +- 0.00465 seconds time elapsed  ( +-  0.49% )
-
-
- Performance counter stats for './mm-omp 1024 15' (20 runs):
-
-        1279517796      L1-dcache-load-misses                                                   ( +-  0.16% )
-             99169      LLC-load-misses                                                         ( +- 13.88% )
-        1024622168      dTLB-load-misses                                                        ( +-  0.70% )
-
-           0.95851 +- 0.00458 seconds time elapsed  ( +-  0.48% )
-
-
- Performance counter stats for './mm-omp 1024 16' (20 runs):
-
-        1284853059      L1-dcache-load-misses                                                   ( +-  0.14% )
-             90726      LLC-load-misses                                                         ( +- 16.58% )
-        1034712486      dTLB-load-misses                                                        ( +-  0.68% )
-
-           0.95995 +- 0.00297 seconds time elapsed  ( +-  0.31% )
-
-
- Performance counter stats for './mm-omp 1024 17' (20 runs):
-
-        1290213621      L1-dcache-load-misses                                                   ( +-  0.13% )
-            118082      LLC-load-misses                                                         ( +- 13.07% )
-        1030155570      dTLB-load-misses                                                        ( +-  0.53% )
-
-           0.96115 +- 0.00294 seconds time elapsed  ( +-  0.31% )
-
-
- Performance counter stats for './mm-omp 1024 18' (20 runs):
-
-        1288039907      L1-dcache-load-misses                                                   ( +-  0.14% )
-            134281      LLC-load-misses                                                         ( +- 14.38% )
-        1033720284      dTLB-load-misses                                                        ( +-  0.49% )
-
-           0.96269 +- 0.00302 seconds time elapsed  ( +-  0.31% )
-
-
- Performance counter stats for './mm-omp 1024 19' (20 runs):
-
-        1287440916      L1-dcache-load-misses                                                   ( +-  0.15% )
-            111819      LLC-load-misses                                                         ( +- 13.58% )
-        1026737783      dTLB-load-misses                                                        ( +-  0.47% )
-
-            0.9788 +- 0.0217 seconds time elapsed  ( +-  2.22% )
-
-
- Performance counter stats for './mm-omp 1024 20' (20 runs):
-
-        1288770781      L1-dcache-load-misses                                                   ( +-  0.10% )
-            111664      LLC-load-misses                                                         ( +- 17.18% )
-        1036655805      dTLB-load-misses                                                        ( +-  0.33% )
-
-            1.0992 +- 0.0429 seconds time elapsed  ( +-  3.90% )
-
-
- Performance counter stats for './mm-omp 1024 21' (20 runs):
-
-        1285149242      L1-dcache-load-misses                                                   ( +-  0.12% )
-            103040      LLC-load-misses                                                         ( +- 15.88% )
-        1023814861      dTLB-load-misses                                                        ( +-  0.93% )
-
-            1.0086 +- 0.0288 seconds time elapsed  ( +-  2.85% )
-
-
- Performance counter stats for './mm-omp 1024 22' (20 runs):
-
-        1288352961      L1-dcache-load-misses                                                   ( +-  0.14% )
-             86956      LLC-load-misses                                                         ( +- 12.54% )
-        1040825423      dTLB-load-misses                                                        ( +-  0.45% )
-
-           0.96079 +- 0.00248 seconds time elapsed  ( +-  0.26% )
-
-
- Performance counter stats for './mm-omp 1024 23' (20 runs):
-
-        1286243516      L1-dcache-load-misses                                                   ( +-  0.11% )
-            110247      LLC-load-misses                                                         ( +- 12.67% )
-        1042050197      dTLB-load-misses                                                        ( +-  0.48% )
-
-           0.96191 +- 0.00263 seconds time elapsed  ( +-  0.27% )
-
-
- Performance counter stats for './mm-omp 1024 24' (20 runs):
-
-        1291389292      L1-dcache-load-misses                                                   ( +-  0.15% )
-             97359      LLC-load-misses                                                         ( +- 11.70% )
-        1041187366      dTLB-load-misses                                                        ( +-  0.51% )
-
-           0.95964 +- 0.00254 seconds time elapsed  ( +-  0.26% )
-
-
- Performance counter stats for './mm-omp 1024 25' (20 runs):
-
-        1294979931      L1-dcache-load-misses                                                   ( +-  0.13% )
-            147201      LLC-load-misses                                                         ( +- 12.84% )
-        1038338253      dTLB-load-misses                                                        ( +-  0.54% )
-
-           0.96281 +- 0.00265 seconds time elapsed  ( +-  0.28% )
-
-
- Performance counter stats for './mm-omp 1024 26' (20 runs):
-
-        1290757748      L1-dcache-load-misses                                                   ( +-  0.15% )
-            154090      LLC-load-misses                                                         ( +- 14.87% )
-        1040523161      dTLB-load-misses                                                        ( +-  0.50% )
-
-           0.96026 +- 0.00272 seconds time elapsed  ( +-  0.28% )
-
-
- Performance counter stats for './mm-omp 1024 27' (20 runs):
-
-        1292787159      L1-dcache-load-misses                                                   ( +-  0.10% )
-            127208      LLC-load-misses                                                         ( +- 15.15% )
-        1040089200      dTLB-load-misses                                                        ( +-  0.57% )
-
-           0.96213 +- 0.00366 seconds time elapsed  ( +-  0.38% )
-
-
- Performance counter stats for './mm-omp 1024 28' (20 runs):
-
-        1289959972      L1-dcache-load-misses                                                   ( +-  0.09% )
-            111492      LLC-load-misses                                                         ( +- 11.30% )
-        1040803656      dTLB-load-misses                                                        ( +-  0.46% )
-
-           0.96243 +- 0.00266 seconds time elapsed  ( +-  0.28% )
-
-
- Performance counter stats for './mm-omp 1024 29' (20 runs):
-
-        1286012359      L1-dcache-load-misses                                                   ( +-  0.11% )
-            114080      LLC-load-misses                                                         ( +- 14.87% )
-        1045851929      dTLB-load-misses                                                        ( +-  0.52% )
-
-           0.96030 +- 0.00253 seconds time elapsed  ( +-  0.26% )
-
-
- Performance counter stats for './mm-omp 1024 30' (20 runs):
-
-        1287372345      L1-dcache-load-misses                                                   ( +-  0.12% )
-            137435      LLC-load-misses                                                         ( +- 11.83% )
-        1042657552      dTLB-load-misses                                                        ( +-  0.56% )
-
-           0.96084 +- 0.00339 seconds time elapsed  ( +-  0.35% )
-
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd-soctf-pdc-011: error: *** JOB 798042 ON soctf-pdc-011 CANCELLED AT 2025-09-15T00:35:31 DUE TO TIME LIMIT ***
+slurmstepd-soctf-pdc-011: error: *** STEP 798042.1 ON soctf-pdc-011 CANCELLED AT 2025-09-15T00:35:31 DUE TO TIME LIMIT ***
+srun: got SIGCONT
+srun: forcing job termination
+srun: error: soctf-pdc-011: task 0: Terminated
+slurmstepd-soctf-pdc-011: error: *** STEP 798043.1 ON soctf-pdc-011 CANCELLED AT 2025-09-15T00:38:31 DUE TO TIME LIMIT ***
+slurmstepd-soctf-pdc-011: error: *** JOB 798043 ON soctf-pdc-011 CANCELLED AT 2025-09-15T00:38:31 DUE TO TIME LIMIT ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: got SIGCONT
+srun: forcing job termination
+srun: error: soctf-pdc-011: task 0: Terminated
+slurmstepd-soctf-pdc-011: error: *** STEP 798044.1 ON soctf-pdc-011 CANCELLED AT 2025-09-15T00:41:32 DUE TO TIME LIMIT ***
+slurmstepd-soctf-pdc-011: error: *** JOB 798044 ON soctf-pdc-011 CANCELLED AT 2025-09-15T00:41:32 DUE TO TIME LIMIT ***
+srun: got SIGCONT
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: forcing job termination
+srun: error: soctf-pdc-011: task 0: Terminated

@@ -13,7 +13,6 @@ srun g++ -fopenmp -o mm-omp mm-omp.cpp -O3
 srun perf stat -r 3 \
   -e fp_arith_inst_retired.scalar_single,\
 L1-dcache-load-misses,\
-L2_RQSTS:DEMAND_DATA_RD_MISS,\
 LLC-load-misses,\
 dTLB-load-misses \
   ./mm-omp $@
