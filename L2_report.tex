@@ -125,15 +125,15 @@ for (i = 0; i < size; i++)
             AB[i][j] += A[i][k] * B[k][j];
 \end{Verbatim}
 \end{minipage}\hfill
-\par\vspace{1ex}
+\par\vspace{1.5ex}
 As we can see the improvement of cache misses and data TLB misses is massive, At 
 N=1024, row vs column shows $\sim 20 \times$ fewer dTLB misses and $\sim 19-25\times$ fewer L1D misses, 
 but only $\sim 5 \times$ fewer LLC misses, The cache line size has 64 bytes which can bring 16 single precision floating
 point numbers a time, row wise access can make full use of the 16 elements brought in while column wise access only 1 among the 16 is
-used. This is consistent with the observation. 
-(4 KB page stride; L1D 32 KB, 64 sets).
-Which lead to better performance measured by wall clock time. L1 data cache miss rate is reduced by a factor of 10, and the value 
+used. This is consistent with the observation. L1 data cache miss rate is reduced by a factor of 10, and the value 
 does not change significantly across number of threads, thus the figure is moved to the appendix.
+This better utilization of cache leads to better performance measured by wall clock time. This improvement amplifies as the size of matrices
+multiplied increases. 
 \par\vspace{1ex}
 \begin{minipage}{0.45\linewidth}
   \noindent\makebox[\columnwidth][c]{%

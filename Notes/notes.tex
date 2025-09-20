@@ -223,7 +223,135 @@ dependency between the tasks.
     \item critical path: the longest path 
     \item degree of concurrency: $\frac{\sum \text{work}}{\text{critical path length}}$, an  indication of the amount of work that can be done in concurrence
 \end{itemize}
+\subsection{IPC models}
+\begin{itemize}
+    \item Shared address space: 
+    \begin{itemize}
+        \item communication abstraction:
+        \begin{itemize}
+            \item Tasks communicate by reading and writing to shared variables
+            \item use locks to ensure mutua exclusion
+            \item logical extension of single processor programming
+            \item require hardware support: able to share address space, ie shared memory systems
+            \item hard to scale due to memroy contention when multiple PUs accessing the same shared address space
+            \item can be mimiced on systems without required hardware support, implemented by message passing: 
+            \begin{itemize}
+                \item write to shared variables: send message to invalidate all pages containing shared variables
+                \item read a shared variable: page fault handler issues appropriate network requests 
+                \item pure software solution, but inefficient
+            \end{itemize}
+            \item very little structure
+            \item all threads can read and write to all shared variables
+            \item Not all reads and writes have the same cost (NUMA), and the cost is not apparent in program text
+        \end{itemize}
+        \item Data parallel
+        \begin{itemize}
+            \item SIMD, vector processors
+            \item Basic structure: map a function onto a collection of data
+            \item side effect free
+            \item no communication among distinct function invocations
+            \item Stream programming model
+            \item very rigid computation structure
+        \end{itemize}
+    \end{itemize}
+    \item Message passing 
+    \begin{itemize}
+        \item tasks communicate via explicit sending and receiving messages
+        \item no need for system wide load and store implementation supported by hardwares
+        \item matches distributed memory system where theres no physically possible shared address space
+        \item more costly than shared address space model
+        \item Possible and common to implement message passing abstraction on shared memory machines:
+        \begin{itemize}
+            \item sending message: copy date into message library buffer
+            \item receiving message: copy data from message library buffer 
+        \end{itemize}
+        \item higly structured, all communication occurs in the form of messages
+    \end{itemize}
+\end{itemize}
+\subsection{Program Parallelization}
+The transformation of sequential program into parallel programs
+\begin{itemize}
+    \item Fine-grain: a sequence of instructions
+    \item in between: a sequecne of statements 
+    \item coarse-grain: a function 
+\end{itemize}
 
+Steps to parallelize a program: (Foster's methodology)
+\begin{enumerate}
+    \item Partitioning: break down problem into many smaller pieces
+    \begin{itemize}
+        \item Data centric: domain decomposition: divide data into pieces of similar size, and determine how to associate computatons with the data (Data parallelism)
+        \item Computation centric: Functional decompositon: determine how to associate data with the conputations (Task parallelism)
+        \item Rules of thumbs:
+        \begin{itemize}
+            \item At least 10x more primitive tasks than cores 
+            \item minimize redundant computation and data storage
+            \item primitive tasks should have roughly the same size
+            \item number of tasks is an increasing function of the problem size
+        \end{itemize}
+    \end{itemize}
+    \item Communicaton: provide data required by the partitioned tasks
+    \begin{itemize}
+        \item Tasks are intended to be executed in parallel, but may not be indenpently executed, thus need to determine data passed among tasks
+        \begin{itemize}
+            \item Local communicaton
+            \begin{itemize}
+                \item Task needs data from a small number of other tasks (neighbours)
+                \item create channels illustrating data flow
+            \end{itemize}
+            \item Global communication
+            \begin{itemize}
+                \item significant number of tasks contribute data to perform a computation 
+                \item no need to create channels for communication early in design
+            \end{itemize}
+            \item Rules of thumb:
+            \begin{itemize}
+                \item Communication operations are balanced aamong tasks
+                \item tasks commnunication with only a small group of neighbours
+                \item commincation can be performed in parallel
+                \item Ideally, distribute and overlap computation and commincation 
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+    \item Agglomeration: decrease communication and develpent cost, while maintaining flexibility
+    \begin{itemize}
+        \item eliminate communication between primitive tasks by agglomerating into consolidated tasks
+        \item Ideally combine groups of sending and receiving tasks 
+        \begin{itemize}
+            \item increase locality of parallel program
+            \item ensure the number of tasks increase with problem size 
+            \item ensure the number of consoliated tasks is suitable for the target system
+            \item balance agglomeration and code modification cost
+        \end{itemize}
+    \end{itemize}
+    \item Mapping: make tasks to processors, goal: minimize execution time
+    \begin{itemize}
+        \item Maximize processor utilization
+        \item minimize inter-processor communication
+        \item Rules of thumb:
+        \begin{itemize}
+            \item NP-hard in general, but can rely on heuristics
+            \item evaluate static and dynamic task allocation
+            \begin{itemize}
+                \item If use dynamic tasks allocation, the task allocator should not be a bottleneck
+                \item if use static task allocation, the ratio of tasks to cores is at least 10:1
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+\end{enumerate}
+\subsection{Parallel programming patterns}
+\subsubsection*{Fork-join}
+\subsubsection*{Parbegin-Parend}
+Suitable for openMP implementation
+\subsubsection*{SPMD and SIMD}
+\subsubsection*{Master-worker}
+\subsubsection*{Task pool}
+Suitable for heterogeneous jobs, eg when the size of incoming problems is unpredicatbale
+\subsubsection*{Producer-consumer}
+\subsubsection*{Pipelining}
+Suitable for task parallelism, when different partition of the task are roughly the same size. Uneven partition size renders pipelining or 
+task parallelism inefficient 
+uuu
 \section{Performance}
 Goal: reduce response time: wall clock time
 \subsection{sequential}
@@ -237,16 +365,24 @@ Goal: reduce response time: wall clock time
 User CPU time of prog A = number of CPU cycles needed fo rall instr times cycle time of CPU $\frac{1}{\text{clock rate}}$\\
 instructions have different exe time: 
 \[N_{cycle}(A) = \sum_{i=1}^{n}n_i(A)\times CPI\]
+\subsubsection*{Memory access}
 \[ N_{mm\_cycle}(A) = N_{read}(A) + N_{write}(A) = \]\[N_{read\_cycle}(A) \times R_{read_miss}(A) \times N_{read\_miss\_cycle}(A + 
 N_{write\_cycle}(A) \times R_{write_miss}(A) \times N_{write\_miss\_cycle}(A))\]
-\[Time_{user}(A) = N_{instr}(A) \times CPI(A) \times Time_{cycle}\]
+\[Time_{user}(A) = (N_{instr}(A) \times CPI(A) + N_{rw\_op}(A) \times R_{miss}(A) \times N_{miss\_cycles})\times Time_{cycle}\]
+k level cache mis:
+\[R_{miss\_global} = \prod_{i=1}^{k} R^{Lk}_{read\_miss}(A)\]
 CPI depends on the internal organization of the CPU, memory system and compiler; $N_{instr}$ depends on the compiler and ISA\\
-\subsubsection*{Memory access}
-
-\[MFLOPS = \frac{N_{fi\_ops}(A)}{Time_{user}(A)\time 10^6}\]
-
+\subsubsection*{Throughput: Million Instruction Per Second (MIPS) Not a good indicator}
+\[MIPS(A) = \frac{N_{instr}(A)}{Time_{user}(A) \times 10^6} = \frac{clock\_frequency}{CPI(A) \times 10^6}\]
+\subsubsection*{Throughput: Million Floating Operations Per Second}
+\[MFLOPS = \frac{N_{fl\_op}(A)}{Time_{user}(A) \times 10^6}\]
+issues: 
+\begin{itemize}
+    \item no differentisation between different types of fp op 
+    \item specfic goal: do fp op
+\end{itemize}
 \subsection{parallel}
-\[T_{processor}(n)\]
+$T_{processor}(n)$ depends on:
 \begin{itemize}
     \item time for local computatio s
     \item time for exchanged of data between PUs
@@ -262,9 +398,12 @@ Cost
 A parallel program is cost-optimal if it exe the same numbr of insructions as the best sequntial program\\
 Effiiency
 \[E_p(n) = \frac{T_{best\_seq}(n)}{C_p(n)} = \frac{S_p(n)}{p} = \frac{T_{best\_seq}(n)}{p\times T_p(n)}\]
-Ideally, $S_p(n) = p \rightarrow E_p(n) = 1$
-
-
+Ideally, $S_p(n) = p \rightarrow E_p(n) = 1$\\
+Issues: 
+\begin{itemize}
+    \item Best sequential algorithm may not be known
+    \item asymptotically optimal algorithm may not be the fastest in practice
+\end{itemize}
 \subsection{Scalability}
 \subsubsection*{Amdahl's law: }
 speed up is limited by the fraction of the algo that cannot be parallelized\\
@@ -273,7 +412,8 @@ speed up is limited by the fraction of the algo that cannot be parallelized\\
 implication: need better compilers to reduce f\\
 drawback: f is not constant wrt n\\
 \subsubsection*{Gustafson's law:}
-\[\lim_{n\rightarrow \infty} f(n) = 0 \rightarrow \lim_{n\rightarrow \infty} S_p(n) = p\]
+\[\lim_{n\rightarrow \infty} f(n) = 0 \rightarrow \lim_{n\rightarrow \infty} S_p(n) = \frac{p}{1 + (p-1)f(n)} = p\]
+Implication: Amdahl's law can be circumvented for large size problems
 \begin{itemize}
     \item 
     \item 
@@ -282,7 +422,8 @@ drawback: f is not constant wrt n\\
 The interaction between size of th eproble  and the size of the parallel machine, dependedt on application, 
 
 
-
+\subsubsection*{Arithmetic Intensity}
+\[\text{Arithmetic intensity} = \frac{\text{the amount of computation}}{\text{the amount of communication}}\]
 
 
 
@@ -291,4 +432,14 @@ The interaction between size of th eproble  and the size of the parallel machine
 many requests to a resource are made witin a small window of time, resource hotspot. Use tree structure communcation to reduce contention, at the cost of high latency 
 \subsubsection*{Locality}
 Exploit sharing: co locate tasks that operate on the same data, 
+
+
+
+
+
+
+
+
+\section{GPGPU}
+
 \end{document}
